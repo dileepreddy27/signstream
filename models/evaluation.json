@@ -1,0 +1,49 @@
+{
+  "scope": "Synthetic motion only; no human sign-language accuracy measured",
+  "labels": [
+    "wave",
+    "sweep",
+    "raise",
+    "circle"
+  ],
+  "seed": 42,
+  "train": 400,
+  "validation": 100,
+  "test": 200,
+  "split_seeds": [
+    1000,
+    2000,
+    3000
+  ],
+  "epochs": 18,
+  "test_accuracy": 1.0,
+  "mean_feature_centroid_accuracy": 0.41,
+  "confusion_matrix_true_rows": [
+    [
+      50,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      50,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      50,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      50
+    ]
+  ],
+  "single_window_cpu_ms_median": 756.37,
+  "parameters": 3636
+}

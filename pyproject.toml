@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signstream"
+version = "0.1.0"
+description = "Temporal landmark recognition laboratory with a synthetic LSTM demo"
+requires-python = ">=3.11,<3.13"
+dependencies = ["numpy==1.26.4", "keras==3.9.2", "tensorflow-cpu==2.19.0", "fastapi==0.115.12", "uvicorn==0.34.2", "websockets==15.0.1"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5", "httpx==0.28.1", "ruff==0.11.5"]
+browser = ["playwright==1.58.0"]
+
+[tool.setuptools]
+packages = ["signstream"]
+
+[tool.ruff]
+line-length = 110
